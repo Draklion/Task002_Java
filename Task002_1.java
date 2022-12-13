@@ -15,28 +15,28 @@ public class Task002_1 {
             LocalDate data = LocalDate.now();
             LocalTime time = LocalTime.now();
             Scanner in = new Scanner(System.in);
-            System.out.print("Введите первое число: ");
+            System.out.print("Р’РІРµРґРёС‚Рµ РїРµСЂРІРѕРµ С‡РёСЃР»Рѕ: ");
             int a = in.nextInt();
-            System.out.print("Введите второе число: ");
+            System.out.print("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂРѕРµ С‡РёСЃР»Рѕ: ");
             int b = in.nextInt();
-            System.out.print("Введите выражение (+, -, *, /): ");
+            System.out.print("Р’РІРµРґРёС‚Рµ РІС‹СЂР°Р¶РµРЅРёРµ (+, -, *, /): ");
             String expression = in.next();
             switch (expression) {
                 case "+":
-                    System.out.printf("Сумма: %s", Sum(a, b));
-                    writer.append("Вызвана функция Sum, " + data + ", " + time + "\n");
+                    System.out.printf("РЎСѓРјРјР°: %s", Sum(a, b));
+                    writer.append("Р’С‹Р·РІР°РЅР° С„СѓРЅРєС†РёСЏ Sum, " + data + ", " + time + "\n");
                     break;
                 case "-":
-                    System.out.printf("Разность: %s", Sub(a, b));
-                    writer.append("Вызвана функция Sub, " + data + ", " + time + "\n");
+                    System.out.printf("Р Р°Р·РЅРѕСЃС‚СЊ: %s", Sub(a, b));
+                    writer.append("Р’С‹Р·РІР°РЅР° С„СѓРЅРєС†РёСЏ Sub, " + data + ", " + time + "\n");
                     break;
                 case "*":
-                    System.out.printf("Произведение: %s", Mult(a, b));
-                    writer.append("Вызвана функция Mult, " + data + ", " + time + "\n");
+                    System.out.printf("РџСЂРѕРёР·РІРµРґРµРЅРёРµ: %s", Mult(a, b));
+                    writer.append("Р’С‹Р·РІР°РЅР° С„СѓРЅРєС†РёСЏ Mult, " + data + ", " + time + "\n");
                     break;
                 case "/":
-                    System.out.printf("Частное: %s", Div(a, b));
-                    writer.append("Вызвана функция Div, " + data + ", " + time + "\n");
+                    System.out.printf("Р§Р°СЃС‚РЅРѕРµ: %s", Div(a, b));
+                    writer.append("Р’С‹Р·РІР°РЅР° С„СѓРЅРєС†РёСЏ Div, " + data + ", " + time + "\n");
                     break;
             }
             writer.close();

@@ -16,17 +16,17 @@ public class Task002_2 {
             char[] array = { 0, 4, 47, 77, 75, 7, 87, 27, 37, 2, 73 };
             char temp = 0;
             for (int i = 0; i < array.length - 1; i++) {
-                writer.append("Проход №" + i + "\n");
+                writer.append("РџСЂРѕС…РѕРґ в„–" + i + "\n");
                 for (int j = 0; j < array.length - 1; j++) {
                     if ((int) array[j] > (int) array[j + 1]) {
                         temp = array[j];
                         array[j] = array[j + 1];
                         array[j + 1] = temp;
                         writer.append(
-                                "Итерация: " + j + ", Значение:" + (int) array[j] + ", " + data + ", " + time + "\n");
+                                "РС‚РµСЂР°С†РёСЏ: " + j + ", Р—РЅР°С‡РµРЅРёРµ:" + (int) array[j] + ", " + data + ", " + time + "\n");
                     } else
                         writer.append(
-                                "Итерация: " + j + ", Значение:" + (int) array[j] + ", " + data + ", " + time + "\n");
+                                "РС‚РµСЂР°С†РёСЏ: " + j + ", Р—РЅР°С‡РµРЅРёРµ:" + (int) array[j] + ", " + data + ", " + time + "\n");
                 }
             }
             writer.close();
